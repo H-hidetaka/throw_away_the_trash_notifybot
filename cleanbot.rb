@@ -25,7 +25,6 @@ end
 line_notify = LineNotify.new("03mmMtw2nuoxi1LLGIX06Jqudgz2EEcvpVvuKPjuHqX")
 # line_notify2 = LineNotify.new("cdRU6MrgM2bzzYN03VToQr3W2fyXqWI8VUyvIsMseoH") # LINE Notifyのアクセストークン(適宜変更)
 # line_notify = LineNotify.new("aqndBAQoi9PI2kZB2dZhAuiaVvj7jK2ysWiVX8aVGnf") # LINE Notifyのアクセストークン(適宜変更)
-@random = rand(52114110..52114149)
 # １、ゴミを出す人を順番に決める。
 # ２、ゴミを出す人が１週間経ったら、違う人に切り替わるようにする。
 
@@ -50,7 +49,6 @@ line_notify = LineNotify.new("03mmMtw2nuoxi1LLGIX06Jqudgz2EEcvpVvuKPjuHqX")
 # １、月曜日〜金曜日までに何のゴミを出すか消める。
 # ２、
 options = {message: "今週のゴミ出し当番は#{clean_bot}です",
-  stickerPackageId: 11539, stickerId: @random,
   notificationDisabled: true}
 # binding.pry
 line_notify.ping(options)

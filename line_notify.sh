@@ -6,3 +6,4 @@ DIR="${HOME}/bot"
 
 cd $DIR
 ruby ruby_bot.rb
+ruby cleanbot.rb
